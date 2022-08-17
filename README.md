@@ -24,7 +24,7 @@ The two CIFAR datasets consist of colored natural images with size of $32\times3
 
 ## Some results
 
-#### pre-trained densenet121 on CIFAR-10:
+### pre-trained densenet121 on CIFAR-10:
 
 <img src="pictures of readme\预训练densenet121_224x224.png" alt="预训练densenet121_224x224" style="zoom:40%;" />
 
