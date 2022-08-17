@@ -22,3 +22,9 @@ The two CIFAR datasets consist of colored natural images with size of $32\times3
 - **other_functions:** Some functions of get_dim, get_channel and so on.
 - **GoogleNet/ResNet/DenseNet.py:** Contains the definitions for specific model and pre-trained model
 
+## Some results
+
+#### pre-trained densenet121:
+
+<img src="pictures of readme\预训练densenet121_224x224.png" alt="预训练densenet121_224x224" style="zoom:40%;" />
+
