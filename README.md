@@ -13,3 +13,12 @@ MNIST dataset consist of gray images of handwritten numbers by different people,
 
 The two CIFAR datasets consist of colored natural images with size of $32\times32\times3$. CIFAR-10 consists of images of 10 classes and CIFAR-100 consists of images of 100 classes. The training and test sets contain 50,000 and 10,000 images respectively.
 
+## Code Base Structure
+
+- **DataLoader.py:** get dataset and datasetLoader for loading specific data
+- **define:** Contains definition of model, optimizer,  scheduler and so on
+- **get_train_test:** Contains the definitions for "train" and "test".
+- **options.py:** Contains all the options for the argparser.
+- **other_functions:** Some functions of get_dim, get_channel and so on.
+- **GoogleNet/ResNet/DenseNet.py:** Contains the definitions for specific model and pre-trained model
+
