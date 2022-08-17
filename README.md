@@ -15,4 +15,4 @@ MNIST dataset consist of gray images of handwritten numbers by different people,
 
 The two CIFAR datasets consist of colored natural images with size of $32\times32\times3$. CIFAR-10 consists of images of 10 classes and CIFAR-100 consists of images of 100 classes. The training and test sets contain 50,000 and 10,000 images respectively.
 
-<img src="pictures of readme\1_SZnidBt7CQ4Xqcag6rd8Ew.png" alt="1_SZnidBt7CQ4Xqcag6rd8Ew" style="zoom:50%;" />
+<img src="pictures of readme\1_SZnidBt7CQ4Xqcag6rd8Ew.png" alt="1_SZnidBt7CQ4Xqcag6rd8Ew" style="zoom:30%;" />
