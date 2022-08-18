@@ -12,10 +12,23 @@ def get_root(opt):
 def get_dataset(opt, type):
     dataset = None
     if opt.pretrained == 'none':
-        tran = transforms.Compose([transforms.ToTensor()])
+        tran_train = transforms.Compose([transforms.ToTensor(),
+                                   transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
+                                   # 图像一半的概率翻转，一半的概率不翻转
+                                   transforms.RandomHorizontalFlip()])
+        tran_test = transforms.Compose([transforms.ToTensor(),
+                                         transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
     else:
-        tran = transforms.Compose([transforms.ToTensor(), transforms.Resize((224, 224))])
-    is_train = True if type == 'train' else False
+        tran_train = transforms.Compose([transforms.ToTensor(), transforms.Resize((224, 224))])
+        tran_test = transforms.Compose([transforms.ToTensor(), transforms.Resize((224, 224))])
+
+    if type == 'train':
+        is_train = True
+        tran = tran_train
+    else:
+        is_train = False
+        tran = tran_test
+
     root = get_root(opt)
 
     if opt.data_name == 'MNIST':

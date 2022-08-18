@@ -47,10 +47,12 @@ def define_scheduler(opt, optimizer):
             #     lr_l = 0.1
             # elif (epoch - opt.niter) / float(opt.niter_decay - opt.niter) == 0.75:
             #     lr_l = 0.1
-            if epoch >= 12:
+            if epoch >= 8:
                 lr_l = 0.1
-            if epoch >= 18:
+            if epoch >= 15:
                 lr_l = 0.01
+            if epoch >= 20:
+                lr_l = 0.001
             # if epoch >= 20:
             #     lr_l = 0.001
             return lr_l
