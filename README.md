@@ -30,4 +30,4 @@ The two CIFAR datasets consist of colored natural images with size of $32\times3
 
 ### ResNet[10,10,10] on CIFAR-10:
 
-<img src="pictures of readme\ResNet_n[10, 10, 10].png" alt="ResNet_n[10, 10, 10]" style="zoom:40%;" />
+<img src="pictures of readme\ResNet_n[10, 10, 10]_随机翻转和标准化.png" alt="ResNet_n[10, 10, 10]" style="zoom:40%;" />
